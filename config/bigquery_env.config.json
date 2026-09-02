@@ -1,0 +1,17 @@
+{
+  "project_id": "omniroute-data-platform-prod",
+  "dataset_location": "US",
+  "datasets": {
+    "telemetry": "omniroute_logistics.telemetry_dispatch_events",
+    "manifest": "omniroute_logistics.master_freight_manifest",
+    "quarantine": "omniroute_logistics.corrupted_whitespace_quarantine"
+  },
+  "retention_policy_days": 90,
+  "optimization": {
+    "partition_field": "_PARTITIONDATE",
+    "clustering_fields": [
+      "shipment_tracking_num_clean",
+      "driver_code_clean"
+    ]
+  }
+}
