@@ -225,3 +225,17 @@ bq query --use_legacy_sql=false \
   < src/01_omniroute_string_sanitization_engine.sql
 ```
 
+##### 💼 Enterprise Data Engineering & Database Optimization Inquiries
+**Elsamag IT Solutions** specializes in architecting high-throughput SQL pipelines, database performance audits, enterprise data warehousing, and automated ETL reconciliation engines.
+
+* **Author & Lead Technical Consultant:** Samuel Chinwendu Agu
+* **Specialization:** Cloud Data Pipelines, SQL Query Tuning, Freight & E-Commerce Telemetry
+* **GitHub:** [github.com/Elsamag](https://github.com/Elsamag)
+* **Consulting Engagements:** Available for retainers, enterprise infrastructure audits, and custom data engineering contracts.
+
+---
+
+##### ⭐ Support & Feedback
+If this project or repository helped you optimize your infrastructure or solve a technical bottleneck, please give it a **Star (⭐)** on GitHub!
+
+Follow **[Samuel Chinwendu Agu (@Elsamag)](https://github.com/Elsamag)** for upcoming open-source enterprise analytics, cybersecurity, and data engineering tools.
