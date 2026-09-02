@@ -198,6 +198,30 @@ sql-logistics-omniroute-whitespace-sanitizer/
 
 ## Step-by-Step Deployment & Execution Guide
 
-Deploying enterprise SQL optimization pipelines and repositories engineered by Elsamag IT Solutions follows a standardized execution workflow:  
+### 1. Clone the Production Repository
+```bash
+git clone https://github.com/Elsamag/sql-logistics-omniroute-whitespace-sanitizer.git
+cd sql-logistics-omniroute-whitespace-sanitizer
+```
+### 2. Configure Environment & Authenticate BigQuery CLI
+```text
+ Set Google Cloud Active Project
+gcloud config set project omniroute-data-platform-prod
 
-**Step 1 Clone the Enterprise Repository**: Retrieve the project source files from the official GitHub organization repository.  
+ Verify BigQuery bq CLI Installation
+bq show --format=prettyjson omniroute-data-platform-prod:omniroute_logistics
+```
+### 3. Execute Sanitization Pipeline Dry-Run
+
+Execute dry-run to validate syntax and estimate byte scan
+```bash
+bq query --use_legacy_sql=false --dry_run < src/01_omniroute_string_sanitization_engine.sql
+```
+### 4. Deploy Production Query & Materialize Clean Views
+```bash
+bq query --use_legacy_sql=false \
+  --destination_table=omniroute_logistics.sanitized_dispatch_manifest \
+  --replace \
+  < src/01_omniroute_string_sanitization_engine.sql
+```
+
