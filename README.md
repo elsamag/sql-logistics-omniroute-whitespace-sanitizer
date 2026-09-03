@@ -153,7 +153,7 @@ The deployment of the string sanitization pipeline prevents critical shipping de
 | **Customer Dispute Tickets** | 128 monthly claims | < 3 monthly claims | 97.6% customer claim reduction |
 
 
-####Strategic Decision Tree for Operations
+#### Strategic Decision Tree for Operations
 
 ```text
 [Ingested Tracking / Badge String]
