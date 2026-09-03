@@ -144,14 +144,14 @@ Executive Summary for Leadership
 
 The deployment of the string sanitization pipeline prevents critical shipping delay escalations and eliminates phantom inventory disputes across OmniRoute dispatch facilities.
 
-```text
+
 | Metric Category | Pre-Sanitization Baseline | Post-Sanitization Result | Net Operational Impact |
 | :--- | :--- | :--- | :--- |
 | **Daily Join Failure Volume** | 63,900 dropped lookups | 0 dropped lookups | 100% elimination of join drops |
 | **Manual Audit Labor** | 17.5 hrs/week ($45,500/yr) | 0 hrs/week ($0/yr) | $45,500 annual wage savings |
 | **Dispatch Latency Variance** | +42 min average delay | 0 min dispatch delay | 100% on-time manifest dispatch |
 | **Customer Dispute Tickets** | 128 monthly claims | < 3 monthly claims | 97.6% customer claim reduction |
-```
+
 
 **Strategic Decision Tree for Operations**
 
